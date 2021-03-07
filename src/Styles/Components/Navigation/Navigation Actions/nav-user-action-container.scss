@@ -1,0 +1,9 @@
+.nav-user-action-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media screen and (max-width: 1025px) {
+        display: none;
+    }
+}

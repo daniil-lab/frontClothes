@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    align-self: center;
+    transition: .5s;
+
+    &.scrolled {
+        transition: .5s;
+        background-color: #fff;
+
+        .nav-route-list-container, .nav-logo-container {
+            .nav-route-item, .nav-logo-text {
+                color: $secondary-color;
+                text-shadow: none;
+            }
+        }
+
+
+    }
+
+    @media screen and (max-width: 1025px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+.base-input {
+    outline: none;
+    border: none;
+    width: 98%;
+    border-bottom: 2px solid $third-color;
+    font-family: 'Montserrat', serif;
+    transition: border .2s;
+    padding: 5px;
+
+    &:focus{
+        border-bottom: 2px solid $primary-color;
+    }
+
+    &:focus ~ label {
+        margin-top: 20px;
+    }
+}

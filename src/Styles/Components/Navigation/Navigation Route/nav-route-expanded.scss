@@ -1,0 +1,39 @@
+.nav-route-expanded {
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    animation: showRouteExpanded .4s;
+
+    @keyframes showRouteExpanded {
+        from {
+            opacity: 0;
+            transform: translateY(30%);
+        } to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &.hidden {
+        animation: hideRouteExpanded .4s;
+        visibility: hidden;
+        transition: visibility .3s;
+
+        @keyframes hideRouteExpanded {
+            from {
+                opacity: 1;
+                transform: translateY(0%);
+            } to {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+        }
+    }
+}

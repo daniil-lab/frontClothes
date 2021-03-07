@@ -1,0 +1,39 @@
+.nav-mobile-drawer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9000;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    animation: showMobileDrawer .4s;
+
+    @keyframes showMobileDrawer {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        } to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    &.hide {
+        transform: translateX(100%);
+        animation: hideMobileDrawer .4s;
+
+        @keyframes hideMobileDrawer {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            } to {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+        }
+    }
+}

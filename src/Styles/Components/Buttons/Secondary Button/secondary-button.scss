@@ -1,0 +1,20 @@
+.secondary-button {
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', serif;
+    background-color: $third-color;
+    padding: 8px 30px;
+    color: $secondary-color;
+    cursor: pointer;
+    margin: 2px;
+    transition: .4s;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $text-color;
+    }
+
+    &:active {
+        color: $secondary-color;
+    }
+}

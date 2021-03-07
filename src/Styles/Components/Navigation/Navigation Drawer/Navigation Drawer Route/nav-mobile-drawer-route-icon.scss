@@ -1,0 +1,15 @@
+.nav-mobile-drawer-route-icon {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    position: relative;
+    top: 3px;
+    transition: .3s;
+    transform: rotateZ(-90deg);
+
+    &.rotate {
+        transform: rotateZ(0deg);
+        top: -1px;
+        transition: .3s;
+    }
+}

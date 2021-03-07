@@ -1,0 +1,29 @@
+.nav-mobile-drawer-route-expanded-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $primary-color;
+
+    animation: showMobileDrawerExpandedRoute .2s;
+
+    @keyframes showMobileDrawerExpandedRoute {
+        from {
+            transform: scale(0);
+        } to {
+            transform: scale(1);
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    .nav-mobile-drawer-route-container {
+        margin: 7px 0px;
+    }
+}

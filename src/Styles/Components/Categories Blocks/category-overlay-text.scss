@@ -1,0 +1,13 @@
+.category-overlay-text {
+    font-size: 20px;
+    color: $text-color;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: $primary-color;
+        transition: transform 1s ease-in-out;
+        transform: scaleX(0);
+    }
+}

@@ -1,0 +1,19 @@
+.nav-action-login-container {
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 50px;
+    animation: showLoginContainer .2s;
+    padding: 20px;
+
+    @keyframes showLoginContainer {
+        from {
+            opacity: 0;
+            transform: translateY(20%);
+        } to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+}

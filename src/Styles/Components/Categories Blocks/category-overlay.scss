@@ -1,0 +1,20 @@
+.category-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 36%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    .category-overlay-text {
+        &::after {
+            transform: scaleX(1);
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1025px) {
+        width: 90%;
+    }
+}

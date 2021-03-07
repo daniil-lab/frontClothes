@@ -1,0 +1,9 @@
+.nav-burger-action-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media screen and (min-width: 1026px) {
+        display: none;
+    }
+}
