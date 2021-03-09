@@ -1,0 +1,34 @@
+.slider-image {
+    height: 100%;
+    width: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin: 0 20px;
+
+    // &.active {
+    //     z-index: 2;
+    //     animation: showSliderImage 1s;
+    //     @keyframes showSliderImage {
+    //         from {
+    //             transform: translateX(100%);
+    //         } to {
+    //             transform: translateX(0);
+    //         }
+    //     }
+    // }
+
+    // &.disabled {
+    //     transform: translateX(-100%);
+    //     animation: hideSliderImage 1s;
+
+    //     @keyframes hideSliderImage {
+    //         from {
+    //             transform: translateX(0%);
+    //         } to {
+    //             transform: translateX(-100%);
+    //         }
+    //     }
+    // }
+}

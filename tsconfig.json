@@ -9,6 +9,7 @@
       "sourceMap": true,
       "target": "es6",
       "baseUrl": ".",
+      "esModuleInterop": false,
       "paths": {
         "Components/*": ["src/Components/*"],
         "Pages/*": ["src/Pages/*"],
